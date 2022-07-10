@@ -1,0 +1,7 @@
+/* CSS class for academic references */
+.paper-reference {
+  padding-left: 30px;
+  text-indent: -30px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}

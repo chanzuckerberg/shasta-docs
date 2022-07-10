@@ -1,0 +1,29 @@
+site_name: Shasta User Guides
+copyright: Copyright &copy; 2022 Chan Zuckerberg Initiative Foundation
+site_url: https://chanzuckerberg.github.io/shasta-docs/
+site_description: "Shasta assembler user guides and documentation"
+
+# Enable when repo is public
+# repo_url: https://github.com/chanzuckerberg/shasta-docs/
+# repo_name: shasta-docs
+
+nav:
+  - Home: index.md
+  - Public Assemblies: public_assemblies.md
+  - FAQ: faq.md
+  - Shasta Documentation: https://chanzuckerberg.github.io/shasta/
+  - About: about.md
+
+theme:
+  name: material
+  favicon: img/favicon.ico
+  logo: assets/ShastaIconColor.svg
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: True

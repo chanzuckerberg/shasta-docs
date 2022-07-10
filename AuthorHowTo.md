@@ -1,0 +1,42 @@
+# Shasta-Docs How To for Authors
+
+## MkDocs
+
+[MkDocs](https://www.mkdocs.org/) are used to create the site from the contents of the `docs` directory. The [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) template is used to format the markdown. The file `mkdocs.yml` controls the site organization and navigation. The [Mkdocs user guide](https://www.mkdocs.org/user-guide/) contains excellent information on [configuration](https://www.mkdocs.org/user-guide/configuration/) and [writing docs](https://www.mkdocs.org/user-guide/writing-your-docs/).
+
+[Github Pages](https://pages.github.com/) are used to host the site from the `gh-pages` branch.
+
+All source content is stored in `docs`, written in Markdown and committed to the main branch. When the site is built, it is built, committed to the `gh-pages` branch (overwriting anything else on that branch), and served by Github Pages.
+
+## Getting started
+
+Do the following steps to get started.
+
+1. Clone the `shasta-docs` repo
+2. In `shasta-docs` clone:
+
+- Using Python3, create a virtual environment and activate it, eg, `python3 -m venv ./venv ; source ./venv/bin/activate`
+- Install the contents of `requirements.txt`, eg, `pip install -r ./requirements.txt`
+
+3. Confirm it is installed by running `mkdocs --help`.
+
+The remainder of this How To assumes you have the Python virtual environment activated, ie, you can run `mkdocs`.
+
+## How To Create and Preview Content
+
+All content should be in the `docs` directory. Pages should be defined in Markdown. If you want to add a page to the top-level navigation, you must add it the `mkdocs.yml` `nav` definition.
+
+For a good overview, see:
+
+- [MkDocs getting started](https://www.mkdocs.org/getting-started/)
+- [Material for MkDocs getting started](https://squidfunk.github.io/mkdocs-material/getting-started/)
+
+While you are creating content, you can preview the site in a browser. To do so, run
+```bash
+mkdocs serve
+```
+
+And navigate to the URL displayed (normally http://localhost:8000/shasta-docs/). This will hot-reload anytime you edit content in the `docs` directory.
+
+## How to Deploy Content
+

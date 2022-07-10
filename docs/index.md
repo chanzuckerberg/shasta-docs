@@ -1,6 +1,6 @@
-# Shasta Github Pages site
+# Welcome to the Shasta User Guides
 
-This repo contains source for Github Pages containing user guides and tutorials related to the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. For the Shasta man pages and algorithmic overview, please see the [Shasta documentation](https://chanzuckerberg.github.io/shasta/).
+This site contains user guides, tutorials and other information for users of the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. Shasta is a denovo assembler for Nanopore reads. The Shasta man pages and algorithmic overview can be found in the [Shasta documentation](https://chanzuckerberg.github.io/shasta/).
 
 ## Contributing
 
@@ -20,4 +20,4 @@ Please note: If you believe you have found a security issue, please responsibly 
 
 ## License
 
-[MIT](LICENSE) © 2022 Chan Zuckerberg Initiative Foundation
+[MIT](https://github.com/chanzuckerberg/shasta-docs/blob/main/LICENSE) © 2022 Chan Zuckerberg Initiative Foundation
