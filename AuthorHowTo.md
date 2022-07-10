@@ -1,4 +1,4 @@
-# Shasta-Docs How To for Authors
+# How To for Authors
 
 ## MkDocs
 
@@ -55,3 +55,9 @@ mkdocs gh-deploy
 ```
 
 After a few minutes, your new content should be visible.
+
+## More Information
+
+Additional links that may be helpful:
+
+- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
