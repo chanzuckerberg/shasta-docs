@@ -1,0 +1,517 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Shasta assembler user guides and documentation">
+      
+      
+      
+        <link rel="canonical" href="https://chanzuckerberg.github.io/shasta-docs/public_assemblies/T2T_CHM13_rel8_ONT_UL/">
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads - Shasta User Guides</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#shasta-assembly-of-t2t-chm13-rel8-oxford-nanopore-ultra-long-reads" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Shasta User Guides" class="md-header__button md-logo" aria-label="Shasta User Guides" data-md-component="logo">
+      
+  <img src="../../assets/ShastaIconColor.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Shasta User Guides
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Shasta User Guides" class="md-nav__button md-logo" aria-label="Shasta User Guides" data-md-component="logo">
+      
+  <img src="../../assets/ShastaIconColor.svg" alt="logo">
+
+    </a>
+    Shasta User Guides
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Public Assemblies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://chanzuckerberg.github.io/shasta/" class="md-nav__link">
+        Shasta Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#motivation" class="md-nav__link">
+    Motivation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#t2t-chm13-rel8-reads" class="md-nav__link">
+    T2T CHM13 rel8 reads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shasta-command-line-options" class="md-nav__link">
+    Shasta command line options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    Evaluation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="shasta-assembly-of-t2t-chm13-rel8-oxford-nanopore-ultra-long-reads">Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads<a class="headerlink" href="#shasta-assembly-of-t2t-chm13-rel8-oxford-nanopore-ultra-long-reads" title="Permanent link">&para;</a></h1>
+<h2 id="motivation">Motivation<a class="headerlink" href="#motivation" title="Permanent link">&para;</a></h2>
+<p>Advances in Oxford Nanopore Technologies (ONT) sequencing, base-calling, and updates to Shasta are outpacing the publishing cycle. We aim to update users on state-of-the-art using the latest and greatest ONT data assembled with Shasta. This release encompassed our latest assembly of CHM13, the AssemblySummary.html, and Assembly.gfa, along with an evaluation. We assembled 120x ultra-long nanopore reads of CHM13 using Shasta 0.9.0 with the iterative assembly mode to produce a haploid de novo genome assembly.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<p>We downloaded publicly available reads created by the <a href="https://sites.google.com/ucsc.edu/t2tworkinggroup">"Telomere-to-Telomere" (T2T) Consortium</a> to assemble CHM13. For a description of sequencing methods by the T2T Consortium, please see https://github.com/marbl/CHM13#oxford-nanopore-data. Release 8 of the data was re-called with Guppy v5.0.7 in super accuracy mode.</p>
+<h3 id="t2t-chm13-rel8-reads">T2T CHM13 rel8 reads<a class="headerlink" href="#t2t-chm13-rel8-reads" title="Permanent link">&para;</a></h3>
+<p>https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/nanopore/rel8-guppy-5.0.7/reads.fastq.gz</p>
+<p>We assembled the reads using Shasta 0.9.0 (Shafin et al., 2020) in the iterative assembly mode by calling the Nanopore-Sep2020 configuration, plus additional command line options listed below. We ran the assembly on <a href="https://mccloud.czi.technology/">McCloud</a>, a service that runs Shasta in the cloud.</p>
+<h3 id="shasta-command-line-options">Shasta command line options<a class="headerlink" href="#shasta-command-line-options" title="Permanent link">&para;</a></h3>
+<pre><code>--Reads.minReadLength 50000 --Kmers.k 10 --MinHash.minHashIterationCount 100
+--Align.minAlignedFraction 0.35 --Align.minAlignedMarkerCount 600
+--Align.maxSkip 50 --Align.maxDrift 30 --Align.maxTrim 30
+--ReadGraph.creationMethod 0 --ReadGraph.maxAlignmentCount 12
+--ReadGraph.crossStrandMaxDistance 0
+--MarkerGraph.refineThreshold 0 --MarkerGraph.minCoveragePerStrand 3
+--MarkerGraph.simplifyMaxLength 10,100,1000,10000 --Assembly.iterative
+--Assembly.pruneLength 10000 --Assembly.consensusCaller Bayesian:guppy-5.0.7-a
+</code></pre>
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<p><strong>Genome assembly file</strong>
+Assembly of CHM13 in FASTA format (one strand only).
+shasta_0.9.0_chm13_assembly.fasta</p>
+<p><strong>Genome assembly summary file</strong>
+Assembly summary information in html format.
+AssemblySummary.html</p>
+<p><strong>Graphical fragment assembly file</strong>
+Assembly in GFA format (one strand only).
+Assembly.gfa</p>
+<p><strong>Assembly evaluation</strong>
+Results of our evaluation of the assembly using QUAST and asmgene presented in tables and figures.
+shasta_0.9.0_chm13_evaluation.pdf</p>
+<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<p><strong>Table 1.</strong> Summary of the size, contiguity, correctness, and completeness statistics for CHM13 Shasta assembly. We evaluated the assembly with <a href="http://quast.sourceforge.net/quast.html">QUAST</a> 5.1.0rcr1 (Gurevich et al., 2013) using <a href="https://www.ncbi.nlm.nih.gov/assembly/GCA_009914755.3/">T2T-CHM13 v1.1</a> as the reference (Nurk <em>et al.</em>, 2022).</p>
+<table>
+<thead>
+<tr>
+<th>Assembly size (Gb)</th>
+<th>N50 (Mb)</th>
+<th>NG50 (Mb)</th>
+<th>NGA50 (Mb)</th>
+<th>mismatches per 100 kbp</th>
+<th>indels per 100 kbp</th>
+<th>Genome fraction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.96</td>
+<td>91.98</td>
+<td>91.98</td>
+<td>87.79</td>
+<td>16</td>
+<td>42</td>
+<td>96.84</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2.</strong> Assembly gene completeness metrics from a asmgene reference-based analysis (Li, 2018) using Ensembl transcripts mapped to the T2T-CHM13 v1.1 reference and the Shasta 0.9.0 assembly. This analysis is similar to BUSCO, but uses all the genes in the human genome.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Description</th>
+<th>genesToReference</th>
+<th>geneToAssembly</th>
+<th>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>full_sgl</td>
+<td>Complete single-copy genes</td>
+<td>34582</td>
+<td>34480</td>
+<td>99.71%</td>
+</tr>
+<tr>
+<td>full_dup</td>
+<td>Misassembled as multi-copy genes</td>
+<td>0</td>
+<td>4</td>
+<td>0.01%</td>
+</tr>
+<tr>
+<td>frag</td>
+<td>Fragmented genes</td>
+<td>0</td>
+<td>4</td>
+<td>0.01%</td>
+</tr>
+<tr>
+<td>part50+</td>
+<td>Genes mapped over 50% of their length</td>
+<td>0</td>
+<td>28</td>
+<td>0.08%</td>
+</tr>
+<tr>
+<td>part10+</td>
+<td>Genes mapped over 10% of their length</td>
+<td>0</td>
+<td>2</td>
+<td>0.01%</td>
+</tr>
+<tr>
+<td>part10-</td>
+<td>Genes mapped below 10% of their length or unmapped</td>
+<td>0</td>
+<td>64</td>
+<td>0.19%</td>
+</tr>
+<tr>
+<td>dup_cnt</td>
+<td>Fraction of missing multi-copy genes</td>
+<td>1172</td>
+<td>1101</td>
+<td>6.06%</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="NGx" src="../img/T2T_CHM13_rel8_ONT_UL/ngx.png" /></p>
+<p><strong>Figure 1.</strong> NGx plot showing contig lengths and their cumulative length in order of descending contig size for CHM13 reads assembled with Shasta 0.9.0 (blue line), CHM13 reads assembled with Shasta 0.1.0 (green; Shafin et al., 2020) and the chromosome arm lengths of theT2T- CHM13 v1.1 assembly (purple). The Shasta 0.9.0 assembly has three contigs that span nearly the length of whole chromosomes. Plotted using a custom script available at https://github.com/rlorigro/GFAse/blob/main/scripts/plot_ngx.py.</p>
+<p><img alt="GFA" src="../img/T2T_CHM13_rel8_ONT_UL/gfa.png" /></p>
+<p><strong>Figure 2.</strong> Single-stranded GFA of CHM13 rel8 ONT reads assembled with Shasta 0.9.0. Contigs are colored and labeled according to their corresponding human chromosome number and arm (p=short,q=long). Plotted using Bandage (Wick <em>et al.</em>, 2015).</p>
+<p><img alt="ideogram" src="../img/T2T_CHM13_rel8_ONT_UL/ideogram.png" /></p>
+<p><strong>Figure 3.</strong> Assembled contigs are plotted in blue and orange above chromosome ideograms of CHM13 T2Tv1.1 reference. Three chromosomes were assembled in essentially one contig (chr8, chr11, chrX), minus the telomeres, and with small gaps in centromeric higher-order repeats (HORs). Thirty chromosome arms are reconstructed in one contig, minus telomeres. However, gaps in the assembly remain in difficult to assembly regions. For example, the acrocentric arms of chr13 and chr15; pericentromeric regions in chr1, chr9 and chr16; and the centromeres of chr17, chr18, chr19, and chr22. The ideogram was plotted in R using the script: https://github.com/mrvollger/asm-to-reference-alignment/blob/main/workflow/scripts/ideogram.R</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<p class="paper-reference">Gurevich,A. et al. (2013) QUAST: quality assessment tool for genome assemblies. <em>Bioinformatics</em>, <strong>29</strong>, 1072–1075.</p>
+<p class="paper-reference">Li,H. (2018) Minimap2: pairwise alignment for nucleotide sequences. <em>Bioinformatics</em>, <strong>34</strong>, 3094–3100.</p>
+<p class="paper-reference">Nurk,S. et al. (2022) The complete sequence of a human genome. <em>Science</em>, <strong>376</strong>, 44–53.</p>
+<p class="paper-reference">Shafin,K. et al. (2020) Nanopore sequencing and the Shasta toolkit enable efficient de novo assembly of eleven human genomes. <em>Nat. Biotechnol.</em>, <strong>38</strong>, 1044–1053.</p>
+<p class="paper-reference">Wick,R.R. et al. (2015) Bandage: interactive visualization of de novo genome assemblies. <em>Bioinformatics</em>, <strong>31</strong>, 3350–3352.</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Chan Zuckerberg Initiative Foundation
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
