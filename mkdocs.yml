@@ -17,7 +17,7 @@ nav:
 theme:
   name: material
   favicon: img/favicon.ico
-  logo: assets/ShastaIconColor.svg
+  logo: assets/ShastaIconWhite.svg
 extra_css:
   - stylesheets/extra.css
 extra:
