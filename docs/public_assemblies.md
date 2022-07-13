@@ -1,6 +1,6 @@
 # Public Assemblies
 
-The following assemblies are available
+The following assemblies are available.
 
 | Assembly                                                            | Description                                                                   |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
