@@ -4,15 +4,17 @@ This repo contains source for Github Pages containing user guides and tutorials 
 
 ## Contributing
 
-Contributions and ideas are welcome! Please don't hesitate to open an issue or send a pull request.
+Contributions and ideas for tutorials, user guides or public assemblies are welcome!
 
-To contribute to these documents, you should head over to the [shasta-docs github repo](https://github.com/chanzuckerberg/shasta-docs). To contribute to Shasta (the software), head over to the [shasta repo](https://github.com/chanzuckerberg/shasta).
+To contribute to these documents, you should head over to the [Shasta-Docs repo](https://github.com/chanzuckerberg/shasta-docs).
+
+To contribute to Shasta (the software), head over to the [Shasta repo](https://github.com/chanzuckerberg/shasta).
 
 This project is governed under the Contributor Covenant code of conduct.
 
-## Getting help
+## Getting help with Shasta
 
-Don't hesitate to reach out to us on the Github issues, or join and reach out on the [CZI Science Slack site](https://join-cellxgene-users.herokuapp.com/).
+Don't hesitate to reach out to us on the [Shasta](https://github.com/chanzuckerberg/shasta/issues) repo and open an issue.
 
 ## Security
 
