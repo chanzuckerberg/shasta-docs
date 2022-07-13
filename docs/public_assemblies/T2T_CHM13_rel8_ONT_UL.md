@@ -1,8 +1,8 @@
-# Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads
+# De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta
 
 ## Motivation
 
-Advances in Oxford Nanopore Technologies (ONT) sequencing, base-calling, and updates to Shasta are outpacing the publishing cycle. We aim to update users on state-of-the-art using the latest and greatest ONT data assembled with Shasta. This release encompassed our latest assembly of CHM13, the AssemblySummary.html, and Assembly.gfa, along with an evaluation. We assembled 120x ultra-long nanopore reads of CHM13 using Shasta 0.9.0 with the iterative assembly mode to produce a haploid de novo genome assembly.
+Advances in Oxford Nanopore Technologies (ONT) sequencing, base-calling, and new Shasta releases are outpacing the scientific publishing cycle. We aim to update users on the state-of-the-art using the latest and greatest ONT data assembled with Shasta. This release encompassed our latest assembly of CHM13, the AssemblySummary.html, and Assembly.gfa, along with an evaluation of the assembly. We assembled 120x ultra-long nanopore reads of CHM13 using Shasta 0.9.0 with the iterative assembly mode to produce a haploid de novo genome assembly.
 
 ## Methods
 
@@ -25,7 +25,9 @@ We assembled the reads using Shasta 0.9.0 (Shafin et al., 2020) in the iterative
     --MarkerGraph.simplifyMaxLength 10,100,1000,10000 --Assembly.iterative
     --Assembly.pruneLength 10000 --Assembly.consensusCaller Bayesian:guppy-5.0.7-a
 
-## Files
+## Assembly files
+
+Available for download from Dryad [https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S](https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S)
 
 **Genome assembly file**
 Assembly of CHM13 in FASTA format (one strand only).
