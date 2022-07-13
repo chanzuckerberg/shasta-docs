@@ -1,6 +1,8 @@
 # Shasta Github Pages site
 
-This repo contains source for Github Pages containing user guides and tutorials related to the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. For the Shasta man pages and algorithmic overview, please see the [Shasta documentation](https://chanzuckerberg.github.io/shasta/).
+This repo contains source for Github Pages containing user guides and tutorials related to the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. 
+
+For the Shasta man pages and algorithmic overview, please see the [Shasta documentation](https://chanzuckerberg.github.io/shasta/).
 
 ## Contributing
 
