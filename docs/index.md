@@ -1,18 +1,22 @@
 # Welcome to the Shasta User Guides
 
-This site contains user guides, tutorials and other information for users of the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. Shasta is a denovo assembler for Nanopore reads. The Shasta man pages and algorithmic overview can be found in the [Shasta documentation](https://chanzuckerberg.github.io/shasta/).
+This site contains guides, tutorials and other information for users of the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. Shasta is a denovo assembler for Nanopore reads. 
+
+The Shasta man pages and algorithmic overview can be found in the Shasta [documentation](https://chanzuckerberg.github.io/shasta/).
 
 ## Contributing
 
-Contributions and ideas are welcome! Please don't hesitate to open an issue or send a pull request.
+Contributions and ideas for tutorials, user guides or public assemblies are welcome!
 
-To contribute to these documents, you should head over to the [shasta-docs github repo](https://github.com/chanzuckerberg/shasta-docs). To contribute to Shasta (the software), head over to the [shasta repo](https://github.com/chanzuckerberg/shasta).
+- To contribute to these documents, you should head over to the [Shasta-Docs](https://github.com/chanzuckerberg/shasta-docs) repo.
+
+- To contribute to Shasta (the software), head over to the [Shasta](https://github.com/chanzuckerberg/shasta) repo.
 
 This project is governed under the Contributor Covenant code of conduct.
 
-## Getting help
+## Getting help with Shasta
 
-Don't hesitate to reach out to us on the Github issues, or join and reach out on the [CZI Science Slack site](https://join-cellxgene-users.herokuapp.com/).
+Don't hesitate to reach out to us on the [Shasta](https://github.com/chanzuckerberg/shasta/issues) repo and open an issue.
 
 ## Security
 
