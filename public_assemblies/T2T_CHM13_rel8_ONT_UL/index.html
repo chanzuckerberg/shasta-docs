@@ -17,7 +17,7 @@
     
     
       
-        <title>Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads - Shasta User Guides</title>
+        <title>De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta - Shasta User Guides</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#shasta-assembly-of-t2t-chm13-rel8-oxford-nanopore-ultra-long-reads" class="md-skip">
+        <a href="#de-novo-genome-assembly-of-human-cell-line-chm13-nanopore-ultra-long-reads-using-shasta" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads
+              De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta
             
           </span>
         </div>
@@ -311,8 +311,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    Files
+  <a href="#assembly-files" class="md-nav__link">
+    Assembly files
   </a>
   
 </li>
@@ -345,9 +345,9 @@
                 
 
 
-<h1 id="shasta-assembly-of-t2t-chm13-rel8-oxford-nanopore-ultra-long-reads">Shasta assembly of T2T CHM13 rel8 Oxford Nanopore ultra-long reads<a class="headerlink" href="#shasta-assembly-of-t2t-chm13-rel8-oxford-nanopore-ultra-long-reads" title="Permanent link">&para;</a></h1>
+<h1 id="de-novo-genome-assembly-of-human-cell-line-chm13-nanopore-ultra-long-reads-using-shasta">De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta<a class="headerlink" href="#de-novo-genome-assembly-of-human-cell-line-chm13-nanopore-ultra-long-reads-using-shasta" title="Permanent link">&para;</a></h1>
 <h2 id="motivation">Motivation<a class="headerlink" href="#motivation" title="Permanent link">&para;</a></h2>
-<p>Advances in Oxford Nanopore Technologies (ONT) sequencing, base-calling, and updates to Shasta are outpacing the publishing cycle. We aim to update users on state-of-the-art using the latest and greatest ONT data assembled with Shasta. This release encompassed our latest assembly of CHM13, the AssemblySummary.html, and Assembly.gfa, along with an evaluation. We assembled 120x ultra-long nanopore reads of CHM13 using Shasta 0.9.0 with the iterative assembly mode to produce a haploid de novo genome assembly.</p>
+<p>Advances in Oxford Nanopore Technologies (ONT) sequencing, base-calling, and new Shasta releases are outpacing the scientific publishing cycle. We aim to update users on the state-of-the-art using the latest and greatest ONT data assembled with Shasta. This release encompassed our latest assembly of CHM13, the AssemblySummary.html, and Assembly.gfa, along with an evaluation of the assembly. We assembled 120x ultra-long nanopore reads of CHM13 using Shasta 0.9.0 with the iterative assembly mode to produce a haploid de novo genome assembly.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
 <p>We downloaded publicly available reads created by the <a href="https://sites.google.com/ucsc.edu/t2tworkinggroup">"Telomere-to-Telomere" (T2T) Consortium</a> to assemble CHM13. For a description of sequencing methods by the T2T Consortium, please see https://github.com/marbl/CHM13#oxford-nanopore-data. Release 8 of the data was re-called with Guppy v5.0.7 in super accuracy mode.</p>
 <h3 id="t2t-chm13-rel8-reads">T2T CHM13 rel8 reads<a class="headerlink" href="#t2t-chm13-rel8-reads" title="Permanent link">&para;</a></h3>
@@ -363,7 +363,8 @@
 --MarkerGraph.simplifyMaxLength 10,100,1000,10000 --Assembly.iterative
 --Assembly.pruneLength 10000 --Assembly.consensusCaller Bayesian:guppy-5.0.7-a
 </code></pre>
-<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<h2 id="assembly-files">Assembly files<a class="headerlink" href="#assembly-files" title="Permanent link">&para;</a></h2>
+<p>Available for download from Dryad <a href="https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S">https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S</a></p>
 <p><strong>Genome assembly file</strong>
 Assembly of CHM13 in FASTA format (one strand only).
 shasta_0.9.0_chm13_assembly.fasta</p>
