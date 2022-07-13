@@ -1,61 +1,54 @@
-# E cervus vix neque loquendi se femina hello!
+# Welcome to the Shasta User Guides
 
-## Agitur et annis praebebat
+## Background
 
-Lorem markdownum stringitur esse coniunx adsueta miseranda nitentem si tanta
-aestus, rogat. Ecce roseum notamque vos **luco mihi** fateamur vibrata ne
-dederat, et vultus moriens forsitan. Senectae disiecta, in humus in sua, sine,
-mutabile intacta mendacis tacitos iussus. Aut **vestis** domus dictis, mihi
-**et** nobis iniecique paribus _non vel deus Epiros sceptri_.
+Shasta is a de novo genome assembly tool for Oxford Nanopore sequencing reads initiated as a collaboration between the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/) and the [Computational Genomics Lab](https://cglgenomics.ucsc.edu/) at the UC Santa Cruz Genomics Institute ([Shafin et al. 2020](https://doi.org/10.1038/s41592-021-01299-w)). 
 
-1. Relinque territa consederat res tempora ille formam
-2. Fateri Fortunae quis
-3. Ergo limum praesentem fallere tenuisset levat cecidisse
-4. Alimentaque suisque maxima esse promissas caput
-5. Vitamque silvas equorum
-6. Est ille incomitata
+Shasta is at the leading edge of cost and performance efficiency. A human genome can be assembled in ~3 hrs for ~$10 of compute costs. And recent benchmarking shows that Shasta produces higher quality human assemblies than the leading competitor Flye ([Shafin et al. 2021](https://doi.org/10.1038/s41587-020-0503-6)). The newest version of Shasta can phase diploid genomes, resolving haplotypes in humans across ~90% of the genome.
 
-## Ipsa ab ingenti canis panda
+## What kinds of science is Shasta enabling?
+*Shasta Team (CZI, UC Santa Cruz) has direct involvement in projects.*
 
-Abdita aerii! Cura et pater quem caelestibus Laertius audito. Sunt
-[Ceres](<https://en.wikipedia.org/wiki/Ceres_(mythology)>)! Rector iam liceat, Iovis violentior misit
-quo sacras aliquid: auctaque, idem. Usa pectora, Cerealia cura, labens.
+### Diagnose genetic diseases
 
-## Markdown Demos
+**[Ultra-rapid human genome sequencing in critical care settings](https://doi.org/10.1038/s41587-022-01221-5)**
 
-### Simple table
+*Stanford University, UC Santa Cruz, Baylor University, Google, Oxford Nanopore Technologies, NVIDA*
 
-| First Header | Second Header | Third Header |
-| ------------ | ------------- | ------------ |
-| Content Cell | Content Cell  | Content Cell |
-| Content Cell | Content Cell  | Content Cell |
+- Researchers developed an ultra-rapid (<8 hr) genome sequencing and analysis pipeline twice as fast as previous approaches.
 
-More [information](https://www.mkdocs.org/user-guide/writing-your-docs/#tables).
+- Applied to diagnose two critically ill patients, a 57-year-old man and a 14-month-old infant.
 
-### Code blocks
+- Used Shasta to fine-tune structural variant calls with local assembly of reads.
 
-A fenced code block:
+**Development of nanopore sequencing and Shasta assembly to clarify rare disease diagnosis**
 
-```text
-Fenced code blocks are like Standard
-Markdown’s regular code blocks, except that
-they’re not indented and instead rely on
-start and end fence lines to delimit the
-code block.
-```
+*UC Santa Cruz, Broad Institute, Children's National Hopsital, CZI*
 
-```python
-print('hi there')
-```
+- Attempt to solve undiagnosed rare genetic disorders in patients where current approaches (i.e., short-read genome assembly, exome sequencing, cytogenetics) fail.
 
-A indented block:
+- Use ONT long-read sequencing and Shasta to de novo assemble genomes of patients with unsolved cases.
 
-    this is
-    a test
-      using more indentation!
+### Study genetic basis of common diseases
 
-### Images
+[NIH Intramural Center for Alzheimer’s and Related Dementias (CARD) - long-read sequencing](https://card.nih.gov/research-programs/long-read-sequencing)
 
-![double-helix](https://medlineplus.gov/images/PX000098_PRESENTATION.jpeg){: style="height:400px;width:400px"}
+*NIH, UC Santa Cruz, CZI*
 
-_Credit: U.S. National Library of Medicine_
+- Build a public database of long-read sequence data, including genome assemblies of people with Alzheimer’s and related dementias and healthy individuals.
+
+- Assembly at scale: 4,000 genomes with Shasta using a single flow cell's worth of reads per sample.
+
+### Discover human genomic diversity
+
+**[Thousand Nanopore Genomes Sequencing Consortium](https://millerlaboratory.com/1000G-ONT.html)**
+
+*U of Washington, Oxford Nanopore Technologies, UC Santa Cruz, CZI + ~100 global researchers*
+
+- Understand human genome structural variation patterns, identify variation in difficult-to-map regions of the genome, and study epigenomic patterns across populations.
+
+- Use Shasta to assemble 500 human genomes from across the globe.
+
+## Collaboration
+
+If you are interested in exploring a collaboration with the Shasta team, please contact ssimmonds@chanzuckerberg.com
