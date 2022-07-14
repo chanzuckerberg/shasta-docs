@@ -1,6 +1,6 @@
 # Welcome to the Shasta User Guides
 
-This site contains guides, tutorials and other information for users of the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. Shasta is a denovo assembler for Nanopore reads. 
+This site contains FAQs, public assemblies, guides, tutorials and other information for users of the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. Shasta is a denovo assembler for Nanopore reads. 
 
 The Shasta man pages and algorithmic overview can be found in the Shasta [documentation](https://chanzuckerberg.github.io/shasta/).
 

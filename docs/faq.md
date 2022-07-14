@@ -1,4 +1,4 @@
-# FAQ
+# FAQs
 
 ## Do I need to preprocess my reads?
 
@@ -46,7 +46,7 @@ Yes. Shasta supports resolving haplotypes of diploid genomes. Please run phased 
 
 If there is a reference for your species or you have an estimate of the genome size from flow cytometry or karyotyping, then the size of your Shasta assembly should be close to the estimated size. Although, we usually find that Shasta assemblies are slightly smaller than the estimated size. You can try tweaking the read length cutoff --Reads.minReadLength. The default is 10000 for standard ONT reads. If you have low coverage (i.e., less than 60x), you could lower the --Reads.minReadLength (in 2,500-5,000 intervals) increases the amount of coverage used in the assembly and potentially increases the assembly size. If you have reads with 60-80x coverage, you can try increasing the --Reads.minReadLength (in 2,500-5,000 intervals) to remove smaller reads from the assembly and potentially increase the contiguity.
 
-If the above recipe does produce the desired result we recommend you, 1) increase the number of MinHash iterations, for example to 100, 2) set the read graph creation method to 0 (no adaptivity in selecting alignment criteria), 3. experiment with alignment criteria, starting with the values chosen in the out of the box assembly (they are in the assembly log). Generally one needs to increase both minAlignedMarkerCount and minAlignedFraction.
+If the above recipe does produce the desired result we recommend you, 1) increase the number of MinHash iterations, for example to 100, 2) set the read graph creation method to 0 (no adaptivity in selecting alignment criteria), 3) experiment with alignment criteria, starting with the values chosen in the out of the box assembly (they are in the assembly log). Generally one needs to increase both minAlignedMarkerCount and minAlignedFraction.
 
 ## What polisher do you recommend?
 
