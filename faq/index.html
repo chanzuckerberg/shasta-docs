@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#faq" class="md-skip">
+        <a href="#faqs" class="md-skip">
           Skip to content
         </a>
       
@@ -464,7 +464,7 @@
                 
 
 
-<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<h1 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">&para;</a></h1>
 <h2 id="do-i-need-to-preprocess-my-reads">Do I need to preprocess my reads?<a class="headerlink" href="#do-i-need-to-preprocess-my-reads" title="Permanent link">&para;</a></h2>
 <p>No. Shasta accepts unprocessed reads as input in .fasta or .fastq formats. Compressed files are not supported, so make sure you decompress reads before running Shasta.</p>
 <p>Any reads shorter than the Reads.minReadLength (default 10000) containing bases with repeat counts &gt;255 are automatically discarded. You can adjust the minimum read length in the assembly using the Reads.minReadLength.</p>
@@ -488,7 +488,7 @@
 <p>Yes. Shasta supports resolving haplotypes of diploid genomes. Please run phased diploid assemblies using the appropriate config. For standard read lengths use Nanopore-Phased-May2022 and for ultra-long read lengths use Nanopore-UL-Phased-May2022. In humans, we get the best assemblies (~90% phased diploid) from ONT ultra-long reads with 60-80x coverage and a read N50 of &gt;50Kb. However, other genomes with much higher rates heterozygosity phase well with lower coverage (45x) and standard read lengths.</p>
 <h2 id="my-assembly-sizecontiguity-is-not-what-i-expected-what-parameters-can-i-tweak">My assembly size/contiguity is not what I expected; what parameters can I tweak?<a class="headerlink" href="#my-assembly-sizecontiguity-is-not-what-i-expected-what-parameters-can-i-tweak" title="Permanent link">&para;</a></h2>
 <p>If there is a reference for your species or you have an estimate of the genome size from flow cytometry or karyotyping, then the size of your Shasta assembly should be close to the estimated size. Although, we usually find that Shasta assemblies are slightly smaller than the estimated size. You can try tweaking the read length cutoff --Reads.minReadLength. The default is 10000 for standard ONT reads. If you have low coverage (i.e., less than 60x), you could lower the --Reads.minReadLength (in 2,500-5,000 intervals) increases the amount of coverage used in the assembly and potentially increases the assembly size. If you have reads with 60-80x coverage, you can try increasing the --Reads.minReadLength (in 2,500-5,000 intervals) to remove smaller reads from the assembly and potentially increase the contiguity.</p>
-<p>If the above recipe does produce the desired result we recommend you, 1) increase the number of MinHash iterations, for example to 100, 2) set the read graph creation method to 0 (no adaptivity in selecting alignment criteria), 3. experiment with alignment criteria, starting with the values chosen in the out of the box assembly (they are in the assembly log). Generally one needs to increase both minAlignedMarkerCount and minAlignedFraction.</p>
+<p>If the above recipe does produce the desired result we recommend you, 1) increase the number of MinHash iterations, for example to 100, 2) set the read graph creation method to 0 (no adaptivity in selecting alignment criteria), 3) experiment with alignment criteria, starting with the values chosen in the out of the box assembly (they are in the assembly log). Generally one needs to increase both minAlignedMarkerCount and minAlignedFraction.</p>
 <h2 id="what-polisher-do-you-recommend">What polisher do you recommend?<a class="headerlink" href="#what-polisher-do-you-recommend" title="Permanent link">&para;</a></h2>
 <p>For human genomes, we recommend <a href="https://github.com/kishwarshafin/pepper/tree/refs/tags/r0.8" target="_blank">Pepper-Margin-DeepVariant</a>. For non-humans, we have had good results using one round of the <a href="https://github.com/fenderglass/Flye/blob/flye/docs/USAGE.md#running-only-flye-polisher" target="_blank">Flye polisher</a>, but results may vary.</p>
 
