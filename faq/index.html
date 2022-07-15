@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#faqs" class="md-skip">
+        <a href="#faq" class="md-skip">
           Skip to content
         </a>
       
@@ -464,14 +464,14 @@
                 
 
 
-<h1 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">&para;</a></h1>
+<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
 <h2 id="do-i-need-to-preprocess-my-reads">Do I need to preprocess my reads?<a class="headerlink" href="#do-i-need-to-preprocess-my-reads" title="Permanent link">&para;</a></h2>
 <p>No. Shasta accepts unprocessed reads as input in .fasta or .fastq formats. Compressed files are not supported, so make sure you decompress reads before running Shasta.</p>
 <p>Any reads shorter than the Reads.minReadLength (default 10000) containing bases with repeat counts &gt;255 are automatically discarded. You can adjust the minimum read length in the assembly using the Reads.minReadLength.</p>
 <h2 id="does-it-matter-what-version-of-guppy-i-used-to-basecall-my-reads">Does it matter what version of Guppy I used to basecall my reads?<a class="headerlink" href="#does-it-matter-what-version-of-guppy-i-used-to-basecall-my-reads" title="Permanent link">&para;</a></h2>
 <p>Yes. For optimal results, please basecall your ONT reads with the latest version of Guppy (5 or 6) using the super accuracy mode. If your reads are Guppy 4 or earlier, it is worth re-basecalling them before running an assembly.</p>
 <h2 id="can-i-run-shasta-using-docker">Can I run Shasta using Docker?<a class="headerlink" href="#can-i-run-shasta-using-docker" title="Permanent link">&para;</a></h2>
-<p>Yes. The documentation can be found in the <a href="https://chanzuckerberg.github.io/shasta/Docker.html" target="_blank">Shasta man pages</a></p>
+<p>Yes. The documentation can be found in the <a href="https://chanzuckerberg.github.io/shasta/Docker.html" target="_blank">Shasta manual</a></p>
 <h2 id="what-is-the-minimum-read-coverage-required-for-standard-ont-reads">What is the minimum read coverage required for standard ONT reads?<a class="headerlink" href="#what-is-the-minimum-read-coverage-required-for-standard-ont-reads" title="Permanent link">&para;</a></h2>
 <p>For standard ONT reads, Shasta performs well with at least 30x coverage of reads ≥10Kb. Optimal coverage is 50-80x of reads ≥10Kb.</p>
 <p>You can adjust the coverage by specifying the desired value for total coverage, in bases with the command --Reads.desiredCoverage. For example, to adjust the desired coverage for a 1 Gb genome to 60x, use --Reads.desiredCoverage 60G.</p>
