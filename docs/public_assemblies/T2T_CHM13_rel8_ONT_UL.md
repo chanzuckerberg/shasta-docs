@@ -1,6 +1,6 @@
 # De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta
 
-# Citation
+## Citation
 
 **If you use any of the statics reported here or files associated with this release in your work, please cite:**
 
