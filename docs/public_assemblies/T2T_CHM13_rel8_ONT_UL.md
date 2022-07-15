@@ -1,5 +1,11 @@
 # De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta
 
+# Citation
+
+**If you use any of the statics reported here or files associated with this release in your work, please cite:**
+
+Simmonds, Sara (2022), De novo genome assembly of human cell line CHM13 nanopore ultra-long reads using Shasta, Dryad, Dataset, [https://doi.org/10.5068/D1GQ3S](https://doi.org/10.5068/D1GQ3S)
+
 ## Motivation
 
 Advances in Oxford Nanopore Technologies (ONT) sequencing, base-calling, and new Shasta releases are outpacing the scientific publishing cycle. We aim to update users on the state-of-the-art using the latest and greatest ONT data assembled with Shasta. This release encompassed our latest assembly of CHM13, the AssemblySummary.html, and Assembly.gfa, along with an evaluation of the assembly. We assembled 120x ultra-long nanopore reads of CHM13 using Shasta 0.9.0 with the iterative assembly mode to produce a haploid de novo genome assembly.
@@ -10,7 +16,7 @@ We downloaded publicly available reads created by the ["Telomere-to-Telomere" (T
 
 ### T2T CHM13 rel8 reads
 
-https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/nanopore/rel8-guppy-5.0.7/reads.fastq.gz
+[https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/nanopore/rel8-guppy-5.0.7/reads.fastq.gz](https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/nanopore/rel8-guppy-5.0.7/reads.fastq.gz)
 
 We assembled the reads using Shasta 0.9.0 (Shafin et al., 2020) in the iterative assembly mode by calling the Nanopore-Sep2020 configuration, plus additional command line options listed below. We ran the assembly on [McCloud](https://mccloud.czi.technology/), a service that runs Shasta in the cloud.
 
@@ -27,7 +33,7 @@ We assembled the reads using Shasta 0.9.0 (Shafin et al., 2020) in the iterative
 
 ## Assembly files
 
-Available for download from Dryad [https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S](https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S)
+**All files are available from Dryad [https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S](https://datadryad.org/stash/dataset/doi:10.5068/D1GQ3S)**
 
 **Genome assembly file**
 Assembly of CHM13 in FASTA format (one strand only).
@@ -67,7 +73,7 @@ shasta_0.9.0_chm13_evaluation.pdf
 
 ![NGx](img/T2T_CHM13_rel8_ONT_UL/ngx.png)
 
-**Figure 1.** NGx plot showing contig lengths and their cumulative length in order of descending contig size for CHM13 reads assembled with Shasta 0.9.0 (blue line), CHM13 reads assembled with Shasta 0.1.0 (green; Shafin et al., 2020) and the chromosome arm lengths of theT2T- CHM13 v1.1 assembly (purple). The Shasta 0.9.0 assembly has three contigs that span nearly the length of whole chromosomes. Plotted using a custom script available at https://github.com/rlorigro/GFAse/blob/main/scripts/plot_ngx.py.
+**Figure 1.** NGx plot showing contig lengths and their cumulative length in order of descending contig size for CHM13 reads assembled with Shasta 0.9.0 (blue line), CHM13 reads assembled with Shasta 0.1.0 (green; Shafin et al., 2020) and the chromosome arm lengths of theT2T- CHM13 v1.1 assembly (purple). The Shasta 0.9.0 assembly has three contigs that span nearly the length of whole chromosomes. Plotted using a custom script [https://github.com/rlorigro/GFAse/blob/main/scripts/plot_ngx.py](https://github.com/rlorigro/GFAse/blob/main/scripts/plot_ngx.py).
 
 ![GFA](img/T2T_CHM13_rel8_ONT_UL/gfa.png)
 

@@ -1,4 +1,4 @@
-# FAQs
+# FAQ
 
 ## Do I need to preprocess my reads?
 
@@ -12,7 +12,7 @@ Yes. For optimal results, please basecall your ONT reads with the latest version
 
 ## Can I run Shasta using Docker?
 
-Yes. The documentation can be found in the [Shasta man pages](https://chanzuckerberg.github.io/shasta/Docker.html){:target="_blank"}
+Yes. The documentation can be found in the [Shasta manual](https://chanzuckerberg.github.io/shasta/Docker.html){:target="_blank"}
 
 ## What is the minimum read coverage required for standard ONT reads?
 
