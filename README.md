@@ -1,6 +1,12 @@
+**This project is abandoned and deprecated.**
+
+Please refer to the [Shasta repo fork](https://github.com/paoloshasta/shasta) for documentation related to Shasta.
+
+---
+
 # Shasta Github Pages site
 
-This repo contains source for Github Pages containing user guides and tutorials related to the [Shasta](https://github.com/chanzuckerberg/shasta) assembler. 
+This repo contains source for Github Pages containing user guides and tutorials related to the [Shasta](https://github.com/chanzuckerberg/shasta) assembler.
 
 For the Shasta man pages and algorithmic overview, please see the [Shasta documentation](https://chanzuckerberg.github.io/shasta/).
 
